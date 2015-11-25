@@ -1,0 +1,1037 @@
+
+/* =========================================================
+ * Media Query Styles
+ * ========================================================= */
+
+/* Everything bigger than portrait tablet ----------- */
+@media only screen 
+and (min-width : 770px) {
+
+	.item-inner {
+	    margin-top: 80%;
+	    opacity: 0;
+	    -webkit-transition: all 500ms ease-out 0.1s;
+	    -moz-transition:    all 500ms ease-out 0.1s;
+	    -ms-transition:     all 500ms ease-out 0.1s;
+	    -o-transition:      all 500ms ease-out 0.1s;
+	    transition:         all 500ms ease-out 0.1s;
+	}
+
+	.interview-title {
+        opacity: 0;
+        margin-bottom: -50%;
+        -webkit-transition: all 500ms ease-out 0.1s;
+        -moz-transition:    all 500ms ease-out 0.1s;
+        -ms-transition:     all 500ms ease-out 0.1s;
+        -o-transition:      all 500ms ease-out 0.1s;
+        transition:         all 500ms ease-out 0.1s;
+    }
+
+    #city-gallery li {
+	    opacity: 0;
+	    top: 150px;
+	}
+}
+
+@media only screen 
+and (max-width : 1200px) {
+
+	.item {
+		height: 280px;
+	}
+
+	.item.height2 {
+		height: 350px;
+	}
+
+	#item-4 .interview-title {
+		bottom: 145px;
+	}
+
+}
+
+@media only screen 
+and (max-width : 1100px) {
+
+	.item {
+		height: 260px;
+	}
+
+	.item.height2 {
+		height: 330px;
+	}
+
+	#item-4 .interview-title {
+		bottom: 125px;
+	}
+
+}
+
+@media only screen 
+and (max-width : 1000px) {
+
+	.item {
+		height: 250px;
+	}
+
+	.item.height2 {
+		height: 320px;
+	}
+
+	#item-4 .interview-title {
+		bottom: 115px;
+	}
+
+
+}
+
+@media only screen 
+and (max-width : 950px) {
+
+	.item {
+		height: 200px;
+	}
+
+	.item.height2 {
+		height: 260px;
+	}
+
+	#item-4 .interview-title {
+		bottom: 70px;
+	}
+
+	#whatIsDesignQuote {
+		display: none;
+	}
+
+	#whatIsDesignLinkButton {
+		left: 55%;
+		margin-top: -30%;
+	}
+
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 768px) {
+
+
+	.interviewPic {
+		opacity: 1 !important;
+	}
+
+	.bumpDown {
+		display: none;
+	}
+
+	.item {
+		position: relative !important;
+		width: 100% !important;
+		margin:	0;
+		top: 0 !important;
+		height: 400px !important;
+		background: 0;
+		margin-bottom: 10px
+	}
+
+	.item-inner {
+		left: 0 !important;
+		width: 100% !important;
+		background: none;
+	}
+
+	.interview-title {
+		top: 30px !important;
+		left: 0px !important;
+		margin: 0px !important;
+		margin-left: 30px !important;
+	}
+
+	.interview-title h2 {
+		font-size: 17px;
+		line-height: 18px;
+		border-bottom: 3px solid;
+		padding-bottom: 3px;
+	}
+
+	.interview-title h3 {
+		font-size: 14px;
+	}
+
+
+	img#nav-logo-img {
+		display: none;
+	}
+
+	nav {
+		position: absolute;
+		margin-top: 0 !important;
+	}
+
+	#navHomeLink {
+        display: block;
+        margin: 0;
+        line-height: 1;
+    }
+
+	nav ul {
+		position: absolute;
+		left: 0;
+		top: 100px;
+		width: 100%;
+		top: -325px;
+		-webkit-transition: all 250ms ease;
+        -moz-transition: all 250ms ease;
+        -ms-transition: all 250ms ease;
+        -o-transition: all 250ms ease;
+	}
+
+	nav ul.down {
+		top: 100px;
+	}
+
+	nav li {
+		display: block;
+		width: 100%;
+		/* padding: 30px; */
+		text-align: center;
+		background: white;
+		/* height: 80px; */
+	}
+
+	nav ul li a {
+		margin: 0;
+		text-align: center;
+		margin: 0 auto;
+		padding: 30px;
+		border-bottom: none !important;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	li#past {
+		display: none;
+	}
+
+	#nav-logo-controls #line-1 {
+		height: 4px !important;
+		top: 60px;
+		position: absolute;
+	}
+
+	#nav-logo-controls #line-1,
+	#nav-logo-controls #line-2,
+	#nav-logo-controls #line-3 {
+		width: 30px !important;
+		left: 50% !important;
+		margin-left: -15px;
+		position: absolute;
+		-webkit-transition: all 250ms ease;
+        -moz-transition: all 250ms ease;
+        -ms-transition: all 250ms ease;
+        -o-transition: all 250ms ease;
+	}
+
+	nav.hero #nav-logo-controls {
+		background: none;
+	}
+
+	nav.hero #nav-logo.scrolled #nav-logo-controls {
+		background: none;
+	}
+
+	nav.hero #nav-logo-controls #line-1,
+	nav.hero #nav-logo-controls #line-2,
+	nav.hero #nav-logo-controls #line-3 {
+		background: white;
+	}
+
+	nav.hero #nav-logo.scrolled #nav-logo-controls.down {
+		background: white;
+	}
+
+	#nav-logo-controls {
+		text-align: center;
+		position: absolute;
+		pointer-events: all !important;
+		cursor: pointer;
+		z-index: 999;
+		width: 100% !important;
+	}
+
+	#nav-logo-controls span {
+		background: #00009d;
+	}
+
+	#nav-logo-controls:hover span {
+		background: #00009d;
+	}
+
+	#nav-logo-controls.down #line-1 {
+		height: 0px !important;
+	}
+
+	.videos {
+		display: none;
+	}
+
+	#nav-logo-controls.down #line-1,
+	#nav-logo-controls.down #line-2,
+	#nav-logo-controls.down #line-3 {
+		-webkit-transform-origin: center center;
+	    -moz-transform-origin: center center;
+	    -ms-transform-origin: center center;
+	    -o-transform-origin: center center;
+	    transform-origin: center center;
+	    background: #eb2030;
+	}
+
+	#nav-logo-controls.down #line-2 {
+		-webkit-transform: rotate(-45deg);
+	    -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	    -o-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	}
+
+	#nav-logo-controls.down #line-3 {
+		top: 48px;
+		-webkit-transform: rotate(45deg);
+	    -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    -o-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	}
+
+	nav.hero2 {
+		display: none;
+	}
+
+	nav.hero #nav-logo {
+		display: inline-block;
+	}
+
+	#hero-about {
+		display: none;
+	}
+
+	nav.hero {
+		width: 100%;
+		position: absolute;
+		padding: 20px 30px;
+		z-index: 9999999;
+		height: initial;
+	}
+
+	nav.hero ul {
+		height: initial;
+	}
+
+	nav.hero ul li {
+		width: 100%;
+		height: initial !important;
+		float: none;
+		position: relative;
+	}
+
+	nav.hero ul li a {
+		color: black;
+		font-size: 10px;
+		letter-spacing: 2px;
+		display: table;
+		margin: 0;
+		width: initial;
+		margin: 0 auto;
+	}
+
+	nav.hero #nav-logo-controls.down {
+		background: white;
+	}
+
+	nav.hero #nav-logo-controls.down span {
+		background: #eb2030 !important;
+	}
+
+	.left-padder, .right-padder, .top-padder {
+		display: none;
+	}
+
+	.nav_link {
+		margin: 0 !important;
+		position: initial !important;
+		padding: 0 !important;
+	}
+
+	nav.hero ul li a:hover .nav_link {
+		border-bottom-color: rgba(0,0,0,0);
+	}
+
+	#mobile-hero-bg {
+		width: 100%;
+		height: 100%;
+		background: url('../images/mobile-hero-bg.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+		position: absolute;
+	}
+
+	#hero-logo-wrapper {
+		overflow: hidden;
+		width: 120px;
+		height: 150px;
+		margin-top: -65px;
+		margin-left: -60px;
+		left: 50%;
+	}
+
+	#hero-logo {
+		height: 100%;
+		margin-left: -65px;
+	}
+
+	section#map-section {
+		top: initial !important;
+	}
+
+	#whatIsDesign p.quote {
+		display: none;
+	}
+
+	#whatIsDesign p#designerQuoted {
+		display: none;
+	}
+
+	#whatIs span {
+		width: 25px;
+		height: 6px;
+		margin-top: 11px;
+	}
+
+	#whatIs h1 {
+		font-size: 30px;
+		padding-left: 40px;
+	}
+
+	h1#ishalf {
+		width: 68px;
+	}
+
+	h1#designTitle {
+		font-size: 30px;
+		bottom: initial;
+		position: absolute;
+		top: 120px;
+		display: block;
+		text-align: center;
+		width: 100%;
+		left: 0;
+	}
+
+	#whatIs {
+		width: 100%;
+		margin: 0;
+		position: initial;
+	}
+
+	#whatIs p {
+		width: 100%;
+		max-width: 400px;
+		margin-top: 60px;
+	}
+
+	#whatIs {
+		max-width: 400px;
+		margin: 0 auto;
+		position: relative;
+		left: 0;
+		padding-top: 60px;
+	}
+
+	#whatIsDesign {
+		padding-top: 0;
+		padding-bottom: 130px;
+	}
+
+	img#whatIsDesignImg {
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		left: 0;
+		margin: 0;
+		opacity: 1 !important;
+		left: 50%;
+		margin-left: -359px;
+		height: 400px;
+	}
+
+	#watchFilm {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-top: -160px;
+		padding: 55px;
+	}
+
+	#allInterviews {
+		width: 100%;
+	}
+
+	a#whatIsDesignLinkButton {
+		margin-top: 0;
+		left: initial;
+		right: initial;
+		margin: 0;
+		margin-left: initial;
+		position: relative;
+	}
+
+	.gruppo-member {
+		width: 50%;
+		padding-bottom: 50%;
+	}
+
+	.gruppo-member-wrapper {
+		width: 50%;
+		padding-bottom: 50%;
+	}
+
+	.gruppo-member.spacer {
+		display: none;
+	}
+
+	#linguine {
+		display: none;
+	}
+
+	#intro-team {
+		width: 100%;
+		margin: 0 !important;
+		left: 0;
+		position: relative;
+		padding-top: 170px;
+		padding-bottom: 0;
+		opacity: 1 !important;
+		border: none;
+		pointer-events: all;
+	}
+
+	#grouppologo {
+		display: none;
+	}
+
+	#intro-team span {
+		display: none;
+	}
+
+	#intro-team h1 {
+		width: initial;
+		text-align: center;
+	}
+
+	#intro-team h2 br {
+		display: none;
+	}
+
+	#year {
+		position: relative;
+		background: none;
+		padding: 9px;
+		margin: 0;
+		-webkit-transform:  rotate(0deg);
+	    -moz-transform:     rotate(0deg);
+	    -ms-transform:      rotate(0deg);
+	    -o-transform:       rotate(0deg);
+	    transform:          rotate(0deg);
+	}
+
+	#gruppo-grid {
+		position: relative;
+	}
+
+	#intro-team h2 {
+		text-align: center;
+		max-width: 380px;
+		margin: 0 auto;
+	}
+
+	.gruppo-footer p {
+		width: 50%;
+	}
+
+	#italiadesign img {
+		display: none;
+	}
+
+	#description {
+		width: 100%;
+		max-width: 430px;
+		margin: 0 auto;
+		float: initial;
+		text-align: center;
+	}
+
+	#description p {
+		text-align: left;
+	}
+
+	#whatItIsPlaya {
+		padding-bottom: 80px;
+	}
+
+	#video {
+		width: 100%;
+		position: relative;
+	}
+
+	#video .inner {
+		width: 100%;
+		left: 0;
+		top: 0;
+		margin-left: 0;
+		position: relative;
+		padding-bottom: 57%;
+	}
+
+	#overlay {
+		display: none;
+	}
+
+	#content {
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 100px;
+	}
+
+	#helpmesee 		{ display: none !important; }
+	#video-title 	{ display: none !important; }
+	#helpmeseeBio 	{ display: none !important; }
+	#progressbar 	{ display: none !important; }
+	#chapters	 	{ display: none !important; }
+	#time		 	{ display: none !important; }
+	#playPauseButtons { display: none !important; }
+
+
+	nav.video-nav.hidden {
+		opacity: 1;
+	}
+
+	nav.video-nav {
+		padding: 0;
+		height: 100px;
+		position: absolute;
+		background: white;
+	}
+
+	nav.video-nav ul {
+		top: 0 !important;
+	}
+
+	nav.video-nav ul li {
+		width: 200px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	nav.video-nav li.lesser-link {
+		display: none;
+	}
+
+	nav.video-nav ul li a {
+		color: black;
+		padding: 40px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	#backLink span {
+		background: black;
+	}
+
+	nav.untouchable {
+		pointer-events: all !important;
+	}
+
+	nav.video-nav.untouchable {
+		pointer-events: all !important;
+	}
+
+	p.product-name {
+		opacity: 1;
+	}
+
+	.bio-interview-inner {
+		margin: 0;
+	}
+
+	.filterer {
+		margin-left: -250px;
+		padding-top: 100px;
+	}
+
+	#pushDown {
+		padding-top: 250px;
+	}
+
+	.interviewPic {
+		opacity: 1;
+	}
+
+	.interviewPic:hover {
+	    -webkit-transform: 	none;
+	    -moz-transform: 	none;
+	    -ms-transform: 		none;
+	    -o-transform: 		none;
+	    transform: 			none;
+	}
+
+	#city-gallery {
+		text-align: center;
+	}
+
+	#city-gallery li {
+		width: 100% !important;
+		padding: 0;
+		left: 0 !important;
+		right: 0;
+		float: initial;
+		max-width: 400px;
+		margin: 0 auto !important;
+		padding-bottom: 20px;
+	}
+
+	.city-video {
+		width: 98%;
+		padding-bottom: 55%;
+		margin-bottom: 30px;
+	}
+
+	#teamBio {
+		position: relative;
+		margin: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px;
+	}
+
+	#bio-gallery li {
+		width: 100% !important;
+		margin: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		display: inline-block;
+		position: relative;
+		padding-top: 20px;
+	}
+
+	.bio-interview-inner {
+		width: 100%;
+		padding: 30px;
+	}
+
+	#bio-gallery li:nth-child(3) {
+		min-height: initial;
+	}
+
+	.city h1 {
+		font-size: 75px;
+		height: 100px;
+	}
+
+	.bio-description h1 {
+		margin: 0;
+	}
+
+}
+
+/* ipad landscape ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+
+	.bio-description h1 {
+		margin: 0;
+	}
+
+		#teamBio {
+		position: relative;
+		margin: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px;
+	}
+
+	#bio-gallery li {
+		width: 100% !important;
+		margin: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		display: inline-block;
+		position: relative;
+		padding-top: 20px;
+	}
+
+	.bio-interview-inner {
+		width: 100%;
+		padding: 30px;
+	}
+
+	#bio-gallery li:nth-child(3) {
+		min-height: initial;
+	}
+
+	#video {
+		width: 100%;
+		position: relative;
+	}
+
+	#video .inner {
+		width: 100%;
+		left: 0;
+		top: 0;
+		margin-left: 0;
+		position: relative;
+		padding-bottom: 57%;
+	}
+
+	#overlay {
+		display: none;
+	}
+
+	#content {
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 100px;
+	}
+
+	#helpmesee 		{ display: none !important; }
+	#video-title 	{ display: none !important; }
+	#helpmeseeBio 	{ display: none !important; }
+	#progressbar 	{ display: none !important; }
+	#chapters	 	{ display: none !important; }
+	#time		 	{ display: none !important; }
+	#playPauseButtons { display: none !important; }
+
+	
+	nav.video-nav.hidden {
+		opacity: 1;
+	}
+
+	nav.video-nav {
+		padding: 0;
+		height: 100px;
+		position: absolute;
+		background: white;
+	}
+
+	nav.video-nav ul {
+		top: 0 !important;
+	}
+
+	nav.video-nav ul li {
+		width: 200px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	nav.video-nav li.lesser-link {
+		display: none;
+	}
+
+	nav.video-nav ul li a {
+		color: black;
+		padding: 40px;
+		height: 100px;
+		overflow: hidden;
+	}
+
+	#backLink span {
+		background: black;
+	}
+
+	nav.untouchable {
+		pointer-events: all !important;
+	}
+
+	nav.video-nav.untouchable {
+		pointer-events: all !important;
+	}
+
+	p.product-name {
+		opacity: 1;
+	}
+
+	.bio-interview-inner {
+		margin: 0;
+	}
+
+	#mobile-hero-bg {
+		width: 100%;
+		height: 100%;
+		background: url('../images/mobile-hero-bg.jpg');
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+		position: absolute;
+	}
+
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 480px) {
+
+	#map-section, .map-padding {
+		display: none;
+	}
+
+	.item {
+		height: 350px !important;
+	}
+
+	.gruppo-member {
+		width: 100%;
+		padding-bottom: 100%;
+	}
+
+	.gruppo-member-wrapper {
+		width: 100%;
+		padding-bottom: 100%;
+	}
+
+	.gruppo-member:hover .gruppo-member-wrapper {
+		-webkit-animation: none;
+		-moz-animation: none;
+		-ms-animation: none;
+		-o-animation: none;
+		animation: none;
+	}
+
+	.gruppo-member .gruppo-member-wrapper {
+		-webkit-animation: none;
+		-moz-animation: none;
+		-ms-animation: none;
+		-o-animation: none;
+		animation: none;
+	}
+
+	#intro-team {
+		padding: 60px 10px 0px 10px;
+	}
+
+	#intro-team h1 {
+		font-size: 40px;
+	}
+
+	.gruppo-footer .social-icons {
+		position: relative;
+		right: initial;
+		bottom: initial;
+		display: block;
+		text-align: center;
+		padding: 40px 0;
+	}
+
+	.gruppo-footer a.social-link {
+		width: 33%;
+		float: left;
+		display: inline-block;
+		margin: 0;
+	}
+
+	.gruppo-footer {
+		text-align: center;
+	}
+
+	.gruppo-footer p {
+		width: 100%;
+	}
+
+	.gruppo-footer p br {
+		display: none;
+	}
+
+	#intro-team h2 {
+		max-width: 270px;
+	}
+
+	img#whatIsDesignImg {
+		display: none !important;
+	}
+
+	#watchFilm {
+		padding-bottom: 10px;
+	}
+
+	#pushDown {
+		display: none;
+	}
+
+	.filterer {
+		position: relative;
+		padding-bottom: 60px;
+		width: 100%;
+		max-width: 200px;
+		text-align: center;
+		margin: 0 auto;
+		left: initial;
+		display: block;
+		padding-top: 60px;
+	}
+
+	.filterer h3 {
+		float: initial;
+		padding: 20px 0;
+		margin: 0;
+	}
+
+	p.bioDescription {
+		width: 100%;
+		position: relative;
+		left: 0;
+		float: none;
+		top: 0;
+		padding: 50px;
+		display: inline-block;
+		padding-top: 0;
+	}
+
+	.bioPic {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	h1.bioHeader {
+		position: relative;
+		display: inline-block;
+		top: 0;
+		text-align: center;
+		left: 0;
+		margin-left: 10%;
+		margin: 0px 50px 20px;
+	}
+
+	li.bio-image {
+		width: 100%;
+		padding: 10px 30px !important;
+	}
+
+	p#bioQuote-2 {
+		width: 100%;
+	}
+
+	.city h1 {
+		font-size: 30px;
+	}
+
+	.italia-america-divide {
+		width: 245px;
+	}
+}

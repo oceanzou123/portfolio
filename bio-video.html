@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="keywords" content="italiaDesign" />
+
+    <meta name="description" content="Vivian is passionate about user-centered design and creating strategic brand experiences that engage people. During the interviews she was responsible for capturing creative angles of the interview subject handling their sketches and prototypes. Along with Gracelle Mesina “the Dance Choreographer”, she led the interviews of branding agency Zetalab, beverage producer Campari and product designer Alessandra Baldereschi. She was also one of the video editors during post-field production.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
+    <title>Good design is good business</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_video.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-query.css" />
+    
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ease.js"></script>
+    <script type="text/javascript" src="js/froogaloop.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <nav class="video-nav hidden">
+            <ul>
+                <li id="backLink"><a href="./">
+                    <span></span>
+                    <span></span>
+                    View My Works</a>
+                </li>
+                <li class="lesser-link">
+                    <a href="">Watch on Vimeo</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="updateable" id="content">
+
+            <section id="video" class="loading">
+                <div class="inner">
+                    <iframe id="video-frame" src="http://player.vimeo.com/video/146474375?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1&amp;player_id=video-frame&amps;api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                    <div id="overlay"></div>
+
+                    <div id="helpmesee" class="hidden"></div>
+
+                    <div class="simple hidden" id="playPauseButtons">
+                        <button class="play" id="playButton">
+                            <span></span>
+                        </button>
+                        <button class="pause show" id="pauseButton">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="volume-off show" id="volumeOffBtn"></button>
+                        <button class="volume-on" id="volumeOnBtn"></button>
+                    </div>
+                    <dl class="listeners"><dt>Event Listeners</dt><dd><label><input class="playProgress" type="checkbox" checked />playProgress</label></dd></dl>
+                </div>
+            </section>
+
+            <div class="bio-interview" id="bio">
+                <div id="teamBio-wrapper" class="bio-interview-wrapper">
+                    <div id="teamBio" class="bio-interview-inner">
+                        <div id="topOfBio"></div>
+                        <h1>Ocean Zou</h1>
+                        <h3><a target="_blank" target="_blank" href="http://www.vivianhu.com">www.vivianhu.com</a></h3>
+                        <p>Ocean has a healthy obsession for user interfaces, motion graphics, interaction design, and user experience design. To understand business better, he also hold a BBA Degree. </p>                        
+                        <div class="social-links">
+                            <a class="social-link twitter" target="_blank" href="http://www.twitter.com/vivian0604" ></a>
+                            <a class="social-link linkedin" target="_blank" href="http://ca.linkedin.com/pub/vivian-hu/65/98/7b/"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chapters" class="shrunk">
+                <div class="chapter" id="chapter-single" seekTo="10">
+                    <p>&nbsp;</p>
+                    <div class="chapter-highlight"></div>
+                </div>
+            </div>
+
+            <div id="progressbar" class="shrunk">
+                <div id="progressbarprogress"></div>
+            </div>
+
+            <div id="time" class="hidden">
+                <p id="progress">0:00</p>
+                <p>/</p>
+                <p id="duration">0:00</p>
+            </div>
+
+            <div id="video-title" class="hidden">
+                <div class="about-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="name">
+                    <h3>About</h3>
+                    <h2>Ocean</h2>
+                </div>
+            </div>
+
+        </div> <!-- content -->
+
+    </div><!-- container -->
+
+    <script>
+        $(window).scroll(function(event){
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 66) {
+                $("#progressbarprogress").addClass("dark");
+                $("#chapters").addClass("dark");
+            } else {
+                $("#progressbarprogress").removeClass("dark");
+                $("#chapters").removeClass("dark");
+            }
+        });
+    </script>
+</body>  
+</html>
