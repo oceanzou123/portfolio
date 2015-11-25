@@ -186,7 +186,7 @@ nav.video-nav {
 }
 
 nav.video-nav li a {
-    color: white;
+    color: #AAAAAA;
 }
 
 nav.hidden {
@@ -258,12 +258,12 @@ nav.hidden {
         }
 
         nav li.lesser-link a {
-            color: #afafaf;
+            color: #AAAAAA;
             margin-right: 0;
         }
 
         nav.hero2 li.lesser-link a {
-            color: rgba(255,255,255,0.3);
+            color: #AAAAAA;
         }
 
         nav.hero2 li.lesser-link a:hover {
@@ -271,7 +271,7 @@ nav.hidden {
         }
 
         nav.video-nav li.lesser-link a {
-            color: rgba(255,255,255,0.5);
+            color: #AAAAAA;
         }
 
         nav.video-nav li.lesser-link a:hover {
@@ -1014,8 +1014,10 @@ img#mapImg {
     left: 33px;
 }
 
-#backLink:hover span { background: #3F3F3F; }
-#backLink:hover a { color: #3B579D; }
+#backLink span { background: #AAAAAA; }
+
+#backLink:hover span { background: #AAAAAA; }
+#backLink:hover a { color: #AAAAAA; }
 
 #video-title {
     z-index: 999;
