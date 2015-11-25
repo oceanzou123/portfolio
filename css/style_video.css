@@ -1014,8 +1014,8 @@ img#mapImg {
     left: 33px;
 }
 
-#backLink:hover span { background: #eb2030; }
-#backLink:hover a { color: #eb2030; }
+#backLink:hover span { background: #3F3F3F; }
+#backLink:hover a { color: #3B579D; }
 
 #video-title {
     z-index: 999;
