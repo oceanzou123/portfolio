@@ -29,7 +29,6 @@
   ================================================== -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 
-
 </head>
 
 
@@ -37,26 +36,32 @@
 
 <body>
     <header>
+    
     <nav class="navigation">
-        <a href="index.html"><img src="img/signiture.png" alt="the logo of my signiture"></a>
-    </nav>
+      <a href="index.html" class="back_button">&lt;  Back to home </a>
+      <img src="img/signiture.png" alt="the logo of my signiture">
+    </nav>  
+
     <article>
         <h2>SpotsChecker</h2>
         <h4>Product Design</h4>
         <p>I joined SAP Lab Canada in 2015 as an interaction designer under their emerging technology team. During my time there, I work with developers to design and develop <strong>SpotChecker</strong>, an in-house DNA Testing iPad application, to mitigate food fraud in retailer's supply chain.</p>
 
         <div class="designshow">
-<!--             <video class = "myVideo" loop height="610" autoplay="autoplay" webkit-playinline>
-            <source src="http://cdn.getforge.com/jeongsteph.com/1445215728/images/fb.m4v" type="video/mp4">  
-            </video> -->
             <img src="img/spotChecker_intro.jpg">
-             <p><strong>Table of Content</strong><br><br>
+             <p class="contentTable"><strong>Table of Content</strong><br><br>
             ---<br>
-                * Key components in photos: PCR machine, SpotsChecker mobile application, and DNA test tools kit.
+                <a href="#problem">1. Problem</a><br>
+                <a href="#ideation"> 2. Ideation</a><br>
+                <a href="#decision">3. Design Decision</a><br>
+                <a href="#userflow">4. User Flow</a><br>
+                <a href="#features">5. Design Features</a><br>
+                <a href="#development">6. Development & Testing</a><br>
+                <a href="takeaways">7. Takeaways</a><br>
             </p> 
          </div> 
 
-        <ul>
+        <ul id="problem">
             <li><h3>Problem Space</h3></li>
             <li><div class="divider"></div></li>
         </ul>
@@ -69,7 +74,7 @@
         <p>Under this context, retailers are feeling the pain of food fraud due to the following reasons: </p>
         <img src="img/spotChecker_problem2.png" alt="problem2 image">
 
-        <ul>
+        <ul id="ideation">
             <li><h3>Ideation</h3></li>
             <li><div class="divider"></div></li>
         </ul>
@@ -79,77 +84,98 @@
     
      </p>
 
-        <ul>
+        <ul id="decision">
             <li><h3>Design decisions</h3></li>
             <li><div class="divider"></div></li>
         </ul>
-        <h5>Digestible human design that integrate with hardware. </h5>
+        <h5>Digestible human design that integrate with testing machine. </h5>
         <br><br>        
         <p>
-        In order to understand the retailer's traditional food fraud testing process, we simulated the lab tesing environment. Via the simulation, I realized that the testing process is trivial but not hard to process. The pain point is read, understand, and follow the scientifc termonology on instruction. Therefore, to deliever in-house testing solution, the key is to deliever human design that can faciliate learning how to test and make test task easier.
-        <br><br> 
-        <img src="img/SpotsChecker_lab_simulation.png" alt="SpotsChecker_lab_simulation">
+        In order to understand the retailer's traditional food fraud testing process, we simulated the lab tesing environment. Via the simulation, I realized that the testing process include the sampling the product via chemistry technology and putting the sample into testing machine. The process is trivial but not hard. The pain point is read, understand, and follow the scientifc termonology on instruction. 
+        <br><br>
 
-        In addition, as the 
-
+        Therefore, to deliever in-house testing solution, the key is to deliever human design that can faciliate learning how to test and make test task easier.
         </p>
 
 
-        <ul>
+        <ul id="userflow">
             <li><h3>Map out experience</h3></li>
             <li><div class="divider"></div></li>
         </ul>
-        <p>user flow, persona</p>
+        <h5>How can we design for people? </h5>
+        <p> We synthesize the data into an information model that maintains the awareness about the type of users we are designing for. This info model is called persona, which help us empathy the user, force us to stick to provide design solution that fits the right user needs.
+            <img src="img/persona.png">
+        </br>We also try to map out user's experience on using the products. By conducting the journey map below, we try to understand the touchpoint for users. 
+            <img src="img/user-flow.png">
+        </p>
+        
 
-        <ul>
-            <li><h3>Design</h3></li>
+        <ul id="features">
+            <li><h3>Design Features</h3></li>
             <li><div class="divider"></div></li>
         </ul>
 
         <div class="designshow">
             <img src="img/SpotCheckers_feature1.png">
-            <p><strong>Simplifying DNA Testing</strong></br></br>
+            <p><strong>1. Simplifying DNA Testing</strong></br></br>
             ---</br>
-            * using the hover state to hint that the blue border area is editable</br>
-            * calling out with the blue pencil icon</p>
+           SpotChecker provides retailers with a new way to test their products, simplifying DNA testing via
+           faster process, 
+           easier content, 
+           better testing machine integration.</p>
          </div>
         <div class="designshow">
-            <img src="http://cdn.getforge.com/jeongsteph.com/1445215728/images/fbemail.png">
-            <p><strong>Experience of writing a personal email</strong></br></br>
+            <img src="img/SpotCheckers_feature2.png">
+            <p><strong>2. Marrying business data with scientific intelligence</strong></br></br>
             ---</br>
-            * the email address section and subject title sectioned off</br>
+           With the help of SpotChecker, retailers can now merge product information (business data) with the science data from DNA Testing Machines. </br>
             </p>
         </div>
         <div class="designshow">
-            <img src="http://cdn.getforge.com/jeongsteph.com/1445215728/images/fbemaillink.png">
-            <p><strong>Dividing email and link into different tabs</strong></br></br>
+            <img src="img/SpotCheckers_feature3.png">
+            <p><strong>3. Centralized Results</strong></br></br>
             ---</br>
-            * providing two ways of sharing</br>
+            Instead of looking at test results from different testing machines, all the test results are sent to SpotChecker, allowing easier test reviews and faster decision making.</br>
             </p>
         </div>
         <div class="designshow">
-            <img src="http://cdn.getforge.com/jeongsteph.com/1445215728/images/fbsecure.png">
-            <p><strong>Clear indication of privacy settings</strong></br></br>
+            <img src="img/SpotCheckers_feature4.png">
+            <p><strong>4. Streamlined Process</strong></br></br>
             ---</br>
-            * making sure the users feel protected</br>
+            Users can always jump back and forth between screens by clicking the navigation button at the bottom. With the help of the header title and progress bar, users never get lost. Additionally, if they scan something, they can click “RE-SCAN” to scan again. </br>
+            </p>
+        </div>
+        <div class="designshow">
+            <img src="img/SpotCheckers_feature5.png">
+            <p><strong>5. Ease of use</strong></br></br>
+            ---</br>
+            To avoid human error, SpotChecker enables barcode scanning instead of typing information. The color palette is designed for dim lighting environments like in a warehouse. The dark background and blue colour creates contrast for testers to view results easier.</br>
             </p>
         </div>
 
-
-        <ul>
-            <li><h3>Testing</h3></li>
+        <ul id="development">
+            <li><h3>Development and Testing</h3></li>
             <li><div class="divider"></div></li>
         </ul>
+        <p>
+            After pitching the static mockup to the project manager, I develop the mockup into an interactive prototype. By using the prototype to do user testing, I got feedback and redesign the interface.  <br>
+            <img src="img/testing.jpg" alt="testing photo">
+
+            As the design got approved, I create style guideline for developers. The design was turned into the development!
+            <br>
+            <img src="img/Design-gudeline_summary.png" alt="style guideline">
+            <img src="img/development.png" alt="development photo">
+        </p>
 
 
-        <ul>
+        <ul id="takeaways">
             <li><h3>Takeaways</h3></li>
             <li><div class="divider"></div></li>
         </ul>
         <h5>Be friends with developers.</h5>
         <p>For the 12 weeks at SAP, I learned an immense amount of lesson ranging from creating a prototype to communicating with others to bring a product to life. I learned to be proactive to get feedback and develop my product into its full potential. I also learned to break out of the comfort zone to try something completely different, which brought me closer to achieving the initial project goals. </br>
         </br>
-        I also learned how to take initiative to bring an awesome idea into an actual product. I participated in a Hackathon with a project manager from the Protect and Care team, engineers, and designers to design something we were all passionate about. With this idea, we got our product placed in the innovation center of one of the world's bestest retailers. I can’t share the project publicly, but if you would like to know more about this hackathon project, <a href="mailto:jeongsteph@gmail.com">drop me an email</a>! </p>
+        I also learned how to take initiative to bring an awesome idea into an actual product. I participated in a Hackathon with a project manager from the Protect and Care team, engineers, and designers to design something we were all passionate about. With this idea, we got the first place in Hackathon. I can’t share the project publicly, but if you would like to know more about this hackathon project, <a href="mailto:jeongsteph@gmail.com">drop me an email</a>! </p>
 	</article>
 
     <footer>

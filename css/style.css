@@ -1,3 +1,36 @@
+/* back navigation button */
+.back_button{
+  color: grey;
+  float: left;
+
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  color: #7F7F7F;
+  background-color: #fff;
+  padding: 10px 0px 100px 100px;
+  line-height: 14pt;
+ }
+
+.navigation a:hover, .navigation a:focus{
+  color: #3B579D;
+}
+
+
+/* table of content */
+.contentTable a{
+  font-weight: normal;
+  color: #1f1f1f;
+}
+
+.contentTable a:hover, .contentTable a:focus{
+  font-weight: normal;
+  color: #3B579D;
+}
+
 /* projects intro */
 
 .blackarea {
@@ -444,9 +477,14 @@ footer {
   padding: 75px 0px 75px 100px;
 }
 .expii {
-  background: #422CE1;
+  background: #1F1F1f;
   padding: 75px 0px 75px 100px;
 }
+
+.expii:hover{
+  background: #3B579D;
+}
+
 .helpster {
   background: #1F8DB0;
   padding: 75px 0px 75px 100px;
@@ -661,6 +699,10 @@ article h5 {
   width: 85%;
 }
 
+.back_button{
+  padding: 10px 0px 0px 50px;
+}
+
 /* divider */
 .divider {
   background-color: #ddd;
@@ -767,6 +809,11 @@ nav img {
 
   .projects h4 {
     padding: 0px 0px 15px 20px;
+  }
+
+  .back_button{
+    padding: 10px 0px 15px 20px;
+    font-size: 14px;
   }
   /* projects page */
   article h2 {
@@ -1618,5 +1665,3 @@ p.credit {
     display: inline-table;
     letter-spacing: 0.2em;
 }
-
-
