@@ -1665,3 +1665,12 @@ p.credit {
     display: inline-table;
     letter-spacing: 0.2em;
 }
+
+article h4 a{
+  color: #9f9f9f;
+}
+
+article h4 a:hover, article h4 a:focus{
+  color: #3B579D;
+}
+
