@@ -1,3 +1,61 @@
+
+
+/* =========================================================
+ * RESET CSS
+ * ========================================================= */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/* =========================================================
+ * Oringial Style
+ * ========================================================= */
+
+
 article h4 a {
     color: #9f9f9f;
     font-weight: bold;
@@ -10,6 +68,10 @@ article h4 a:hover {
 .watch_animation img{
   width: 10%;
   padding: 0px 0px 70px 150px;
+}
+
+.passion_descripition{
+  float: left;
 }
 
 /* back navigation button */
@@ -1018,702 +1080,6 @@ footer p {
 }
 
 
-
-/* =========================================================
- * Video Player
- * ========================================================= */
-
-#backLink span {
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 2px;
-    height: 10px;
-    background: white;
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transition: background 300ms ease;
-    -moz-transition: background 300ms ease;
-    -ms-transition: background 300ms ease;
-    -o-transition: background 300ms ease;
-    transition: background 300ms ease;
-}
-
-#backLink span:first-child {
-    -webkit-transform:  rotate(45deg);
-    -moz-transform:     rotate(45deg);
-    -ms-transform:      rotate(45deg);
-    -o-transform:       rotate(45deg);
-    transform:          rotate(45deg);
-    top: 40px;
-    left: 33px;
-}
-
-#backLink span:last-child {
-    -webkit-transform:  rotate(-45deg);
-    -moz-transform:     rotate(-45deg);
-    -ms-transform:      rotate(-45deg);
-    -o-transform:       rotate(-45deg);
-    transform:          rotate(-45deg);
-    top: 46px;
-    left: 33px;
-}
-
-#backLink:hover span { background: #eb2030; }
-#backLink:hover a { color: #eb2030; }
-
-#video-title {
-    z-index: 999;
-    position: fixed;
-    color: white;
-    opacity: 1;
-    cursor: pointer;
-    -webkit-transition: opacity 500ms ease;
-    -moz-transition:    opacity 500ms ease;
-    -ms-transition:     opacity 500ms ease;
-    -o-transition:      opacity 500ms ease;
-    transition:         opacity 500ms ease;
-    left: 35px;
-    bottom: 66px;
-}
-
-#video-title.not-clickable {
-    cursor: default;
-}
-
-#video-title.not-clickable h2 {
-    color: white !important;
-}
-
-#video-title h3 {
-    font-family: Brandon;
-    font-size: 10px;
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-#video-title:hover { 
-    color: #eb2030;
-}
-
-#video-title.hidden {
-    opacity: 0;
-}
-
-
-.about-icon {
-    position: relative;
-    width: 20px;
-    height: 30px;
-    cursor: pointer;
-    float: left;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-    .about-icon span {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        display: block;
-        width: 3px;
-        height: 20px;
-        background: white;
-        -webkit-transform-origin:   center center;
-        -moz-transform-origin:      center center;
-        -ms-transform-origin:       center center;
-        -o-transform-origin:        center center;
-        transform-origin:           center center;
-        -webkit-transition: background 500ms ease;
-        -moz-transition:    background 500ms ease;
-        -ms-transition:     background 500ms ease;
-        -o-transition:      background 500ms ease;
-        transition:         background 500ms ease;
-    }
-
-    #video-title:hover .about-icon span {
-        background: #eb2030;
-    }
-
-            .about-icon span:first-child {
-                -webkit-transform:  rotate(-45deg);
-                -moz-transform:     rotate(-45deg);
-                -ms-transform:      rotate(-45deg);
-                -o-transform:       rotate(-45deg);
-                transform:          rotate(-45deg);
-                left: 70%;
-            }
-
-            .about-icon span:last-child {
-                -webkit-transform:  rotate(45deg);
-                -moz-transform:     rotate(45deg);
-                -ms-transform:      rotate(45deg);
-                -o-transform:       rotate(45deg);
-                transform:          rotate(45deg);
-                left: 10%;
-            }
-
-    #video-title.scrolled .about-icon span:first-child {
-        background: #eb2030;
-        left: 50%;
-    -webkit-transition: all 100ms ease;
-        -moz-transition:    all 100ms ease;
-        -ms-transition:     all 100ms ease;
-        -o-transition:      all 100ms ease;
-        transition:         all 100ms ease;
-    }
-
-    #video-title.scrolled .about-icon span:last-child {
-        background: #eb2030;
-        left: 50%;
-        -webkit-transition: all 100ms ease;
-        -moz-transition:    all 100ms ease;
-        -ms-transition:     all 100ms ease;
-        -o-transition:      all 100ms ease;
-        transition:         all 100ms ease;
-    }
-
-    #video-title.scrolled:hover .about-icon span:first-child {
-        left: 10%;
-    }
-
-    #video-title.scrolled:hover .about-icon span:last-child {
-        left: 70%;
-    }
-
-    .name { float: left; }
-
-button {
-    margin: 0;
-    cursor: pointer;
-}
-
-#playPauseButtons {
-    position: fixed;
-    height: 50px;
-    bottom: 60px;
-    right: 18px;
-    opacity: 1;
-    z-index: 9999;
-    -webkit-transition: all 500ms ease;
-    -moz-transition:    all 500ms ease;
-    -ms-transition:     all 500ms ease;
-    -o-transition:      all 500ms ease;
-    transition:         all 500ms ease;
-}
-
-#playPauseButtons.hidden {
-    opacity: 0;
-}
-
-    #playPauseButtons button {
-        outline: none;
-        background: none;
-        border: 0;
-        color: white;
-        background: rgba(0,0,0,0);
-        -webkit-transition: all 200ms ease;
-        -moz-transition:    all 200ms ease;
-        -ms-transition:     all 200ms ease;
-        -o-transition:      all 200ms ease;
-        transition:         all 200ms ease;
-    }
-
-    #playPauseButtons button span {
-        -webkit-transition: all 200ms ease;
-        -moz-transition:    all 200ms ease;
-        -ms-transition:     all 200ms ease;
-        -o-transition:      all 200ms ease;
-        transition:         all 200ms ease;
-    }
-
-button#playButton, button#pauseButton, #volumeOnBtn, #volumeOffBtn {
-    height: 50px;
-    width: 50px;
-}
-
-button#pauseButton span {
-    height: 20px;
-    width: 3px;
-    top: 15px;
-    background: white;
-    position: absolute;
-}
-
-/* If the bio is on */
-
-    #playPauseButtons.scrolled button#pauseButton span {
-        background: #333;
-    }
-
-
-    button#pauseButton:hover span {
-        background: #eb2030 !important;
-    }
-
-    button#pauseButton span:first-child {
-        left: 18px;
-    }
-
-    button#pauseButton span:last-child {
-        left: 29px;
-    }
-
-button#playButton span {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 17px solid white;
-    margin: 0;
-    padding: 0;
-    border-right: 0;
-    position: absolute;
-    margin-left: -8px;
-    margin-top: -10px;
-}
-
-/* If the bio is on */
-
-    #playPauseButtons.scrolled button#playButton span {
-        border-left: 17px solid #333;
-    }
-
-    button#playButton:hover span {
-        border-left: 17px solid #eb2030 !important;
-    }
-
-button#volumeOffBtn, button#volumeOnBtn {
-    background: url(../images/icons/sound-on.png) 50% 5px no-repeat;
-    background-size: 50px;
-    -webkit-transition: background-position 0ms;
-    -moz-transition:    background-position 0ms;
-    -ms-transition:     background-position 0ms;
-    -o-transition:      background-position 0ms;
-    transition:         background-position 0ms;
-}
-
-button#volumeOnBtn {
-    background: url(../images/icons/sound-off.png) 50% 5px no-repeat;
-    background-size: 50px;
-}
-
-
-/* If the bio is on */
-
-    #playPauseButtons.scrolled button#volumeOffBtn, #playPauseButtons.scrolled button#volumeOnBtn {
-        background-position: 50% -100px;
-    }
-
-button#volumeOffBtn:hover, button#volumeOnBtn:hover {
-    background-position: 50% !important;
-}
-
-iframe {
-    position: absolute;
-}
-
-#progressbar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 5px;
-    padding: 30px;
-    width: 100%;
-    cursor: pointer;
-    z-index: 999999;
-    -webkit-transition: all 500ms ease;
-    -moz-transition:    all 500ms ease;
-    -ms-transition:     all 500ms ease;
-    -o-transition:      all 500ms ease;
-    transition:         all 500ms ease;
-}
-
-#progressbar.shrunk {
-    margin-bottom: -12px;
-    opacity: 0;
-}
-
-#progressbarprogress {
-    width: 0%;
-    height: 5px;
-    background: #FFF;
-}
-
-#progressbarprogress.dark {
-    background: red;
-}
-
-dl.listeners {
-    display: none;
-}
-
-#full {
-    height: 100%;
-    overflow: hidden;
-}
-
-#time {
-    position: fixed;
-    z-index: 99999999;
-    bottom: 62px;
-    right: 140px;
-    width: 100px;
-    text-align: center;
-    pointer-events: none;
-    color: white;
-    right: 50%;
-    margin-right: -50px;
-    opacity: 1;
-    -webkit-transition: opacity 500ms ease;
-    -moz-transition:    opacity 500ms ease;
-    -ms-transition:     opacity 500ms ease;
-    -o-transition:      opacity 500ms ease;
-    transition:         opacity 500ms ease;
-}
-
-#time.hidden {
-    opacity: 0;
-}
-
-#time.scrolled {
-    color: #333;
-    right: 140px;
-    margin: 0;
-}
-
-#time p {
-    font-family: Brandon;
-    letter-spacing: 2px;
-    padding: 0px;
-    font-size: 13px;
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: normal;
-}
-
-#overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(255,255,255,0);
-    z-index: 9;
-    -webkit-transition: background 250ms linear;
-    -moz-transition:    background 250ms linear;
-    -ms-transition:     background 250ms linear;
-    -o-transition:      background 250ms linear;
-    transition:         background 250ms linear;
-}
-
-    #overlay.dim {
-        background: rgba(255,255,255,0.85);
-        -webkit-transition: background 500ms ease-in;
-        -moz-transition:    background 500ms ease-in;
-        -ms-transition:     background 500ms ease-in;
-        -o-transition:      background 500ms ease-in;
-        transition:         background 500ms ease-in;
-    }
-
-    .video_container {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        display: inline-block;
-        top: 0;
-        left: 0;
-        background: #333;
-    }
-
-.vjs-control-bar {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.player .controls {
-    display: none !important;
-}
-
-dd {
-    display: inline-block;
-}
-
-#playButton, #pauseButton, #volumeOnBtn, #volumeOffBtn {
-    display: none;
-}
-
-#playButton, #pauseButton {
-    position: absolute;
-    right: 54px;
-    bottom: 0px;
-}
-
-#volumeOffBtn, #volumeOnBtn {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-#playButton.show, #pauseButton.show, #volumeOnBtn.show, #volumeOffBtn.show {
-    display: inline-block;
-}
-
-#close-button {
-    position: fixed;
-    right: 30px;
-    font-size: 24px;
-    top: 30px;
-    color: white;
-    padding: 10px 17px;
-    text-decoration: none;
-    z-index: 9999;
-}
-
-#video {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 2;
-  opacity: 1;
-  -webkit-transition: opacity 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -moz-transition: opacity 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: opacity 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: opacity 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); 
-}
-
-#video .inner {
-    width: 110%;
-    position: absolute;
-    top: -75px;
-    left: 50%;
-    bottom: -75px;
-    margin-left: -55%;
-    text-align: center;
-    background: #fafafa;
-    z-index: 1; 
-}
-
-#video .back {
-    display: none; 
-}
-
-#video iframe {
-    width: 100%;
-    height: 100%;
-    left: 0;
-    -webkit-transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    -moz-transition:    opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    -o-transition:      opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition:         opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1); 
-}
-
-#chapters {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 55px;
-    width: 100%;
-    cursor: pointer;
-    padding: 0 30px;
-    z-index: 9999999;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    pointer-events: none;
-}
-
-#chapters p {
-    margin: 0;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 9px;
-    text-transform: uppercase;
-    pointer-events: all;
-    opacity: 0.5;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-    padding: 5px 0px;
-    display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;  
-    white-space: nowrap;
-}
-
-#chapters.shrunk {
-    margin-bottom: -12px;
-    opacity: 0;
-}
-
-.chapter {
-    height: 100%;
-    display: inline-block;
-    margin: 0;
-    float: left;
-    padding-right: 4px;
-}
-
-.chapter:last-child { padding-right: 0; }
-
-.chapter-highlight {
-    width: 100%;
-    height: 5px;
-    bottom: 0;
-    -webkit-transition: all 100ms ease;
-    -moz-transition: all 100ms ease;
-    -ms-transition: all 100ms ease;
-    -o-transition: all 100ms ease;
-    transition: all 100ms ease;
-    background: rgba(255,255,255,0.3);
-}
-
-#chapters.dark .chapter .chapter-highlight {
-    background: rgba(0,0,0,0.3);
-}
-
-#chapters.dark p {
-    color: black;
-}
-
-.chapter:hover .chapter-highlight {
-    background: rgba(255,0,0,0.5);
-}
-
-.chapter:hover p {
-    opacity: 1 !important;
-}
-
-#chapters.dark .chapter:hover .chapter-highlight {
-    background: #eb2030;
-}
-
-#chapters.cultural-chapters p {
-  opacity: 0;
-}
-
-    #chapter-single { width: 100%; }
-    #chapter-1 { width: 20%; color: #eb2030; }
-    #chapter-2 { width: 17%; }
-    #chapter-3 { width: 20%; color: #00b4ad; }
-    #chapter-4 { width: 22%; color: #eac432; }
-    #chapter-5 { width: 21%; color: #E9712F; }
-
-#helpmesee {
-    pointer-events: none;
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    z-index: 99;
-    bottom: 0;
-    opacity: 1;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    -ms-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
-    transition: all 250ms ease;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.98) 98%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(98%,rgba(0,0,0,0.98)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.98) 98%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.98) 98%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.98) 98%,rgba(0,0,0,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.98) 98%,rgba(0,0,0,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-}
-
-#helpmesee.hidden {
-    opacity: 0;
-}
-
-#helpmesee.superHidden {
-    opacity: 0 !important;
-}
-
-    #helpmeseeBio {
-        background: #fafafa;
-        border-top: 1px solid #ddd;
-        bottom: 0;
-        z-index: 99999;
-        opacity: 0;
-        -webkit-transition: all 250ms ease;
-        -moz-transition: all 250ms ease;
-        -ms-transition: all 250ms ease;
-        -o-transition: all 250ms ease;
-        transition: all 250ms ease;
-        position: fixed;
-        z-index: 99999;
-        height: 55px;
-        width: 100%;
-    }
-
-    #helpmeseeBio.show {
-        opacity: 1;
-    }
-
-#playEndButtons {
-    display: none;
-}
-
-
-/* =========================================================
- * Bio
- * ========================================================= */
-
-
-#bio {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    pointer-events: none;
-    display: none;
-    display: inline-block;
-}
-
-    .bio-interview-wrapper {
-        width: 100%;
-        top: 100%;
-        position: absolute;
-        min-height: 100%;
-    }
-
-    .bio-interview-inner {
-        pointer-events: all;
-        width: 80%;
-        max-width: 1420px;
-        margin: 0 auto;
-        position: relative;
-        padding-bottom: 8%;
-    }
-
-p.credit {
-    text-align: center;
-    font-size: 11px;
-    color: #333;
-}
-
-.bio-description h1 {
-    margin-left: -10%;
-    border-bottom: 4px solid;
-    display: inline-table;
-    letter-spacing: 0.2em;
-}
-
 article h4 a{
   color: #9f9f9f;
 }
@@ -1722,3 +1088,125 @@ article h4 a:hover, article h4 a:focus{
   color: #3B579D;
 }
 
+
+/* =========================================================
+ * Grid CSS
+ * ========================================================= */
+
+/*
+  With this selector, we are specifying that all objects use
+  the border-box model (not the content-box model)
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*
+  Here we are using a 'fancy' css selector that is 
+  specifying if the class of an item starts with
+  'grid-col-', then we should apply the styling listed
+*/
+[class^='grid-col-'] {
+  float: left;
+  padding: 0; 
+  
+}
+
+
+/*
+  Here we are defining our default column widths with the intention
+  of keeping it 'mobile first'
+*/
+.grid-col-1of10, .grid-col-2of10, .grid-col-3of10, 
+.grid-col-4of10, .grid-col-5of10, .grid-col-6of10, 
+.grid-col-7of10, .grid-col-8of10, .grid-col-9of10,
+.grid-col-10of10 {
+  width: 100%;
+}
+
+/* Grids for the review page */
+.grid-25 {
+  float: left;
+  width: 50%;
+  padding: 0em 1em 0em 1em;
+}
+
+.grid-25:first-child,
+.grid-25:nth-child(3) {
+  padding-left: 0;
+}
+
+
+/*
+  Here we are clearing floated items to ensure that
+  our 'grid' structure can have different rows
+*/
+.grid-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*
+  Using further @media queries, we specify that at a width of
+  less than 30em it should collapse the 2/10 columns into one stack
+
+  Think of this as saying, when display width > 30em, apply this
+*/
+/*
+  Here using @media queries, we are specifying when the display
+  has a width less than 50em it should collapse the 5/10 columns 
+  into one stack (hence width: 100%)
+
+  Think of this as saying, when display width > 50em, apply this
+*/
+@media (min-width: 65em) {
+
+  .grid-col-1of10{
+    width: 10%;
+  }
+
+  .grid-col-2of10{
+    width: 20%;
+  }
+
+  .grid-col-3of10 {
+    width: 30%;
+  }
+
+  .grid-col-4of10 {
+    width: 40%;
+  }
+
+  .grid-col-5of10 {
+    width: 50%;
+  }
+
+  .grid-col-6of10 {
+    width: 60%;
+  }
+
+  .grid-col-7of10 {
+    width: 60%;
+  }
+
+  .grid-col-8of10 {
+    width: 80%;
+  }
+
+  .grid-col-9of10 {
+    width: 90%;
+  }
+
+  .grid-col-10of10 {
+    width: 100%;
+  }
+
+  .grid-25 {
+    width: 25%;
+  }
+} 
