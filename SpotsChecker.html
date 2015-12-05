@@ -15,10 +15,6 @@
     <link rel="icon" 
       type="image/png" href="img/favicon.png">
 
-    <!-- Font
-  ================================================== -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-
 </head>
 
 
@@ -177,9 +173,25 @@
     </a>
     </footer>
 
-      <!-- JS
+    <!-- Font
   ================================================== -->
-  <script type="text/javascript" src="js/main-dist.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>  
+
+  <!-- JS
+  ================================================== -->
+  <script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "js/main-dist.js";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
+  
 </div>
 </body>
 
