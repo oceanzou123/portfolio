@@ -8,9 +8,11 @@
 
     <!-- CSS
   ================================================== -->
+
     <link href="css/reset.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet">
+
+    
 
     <!-- JS
   ================================================== -->
@@ -19,7 +21,6 @@
     <script type="text/javascript" src="js/froogaloop.js"></script>
     <script type="text/javascript" src="js/video.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="js/lightbox.js"></script>
 
     <!-- Favicon
   ================================================== -->
@@ -42,7 +43,7 @@
     </header>
 
     <article>
-        <div class="intro">
+        <!-- <div class="intro"> 
             <h1><strong>Ocean Zou,</strong> a digital designer from Vancouver.<br>
                 Believing in a good design is a good business.
             </h1>
@@ -50,7 +51,20 @@
                 Please feel free to check out <a href="#work">my projects</a> and <a href="#aboutme">profile</a>
             </h4>
             
+       </div> -->
+
+        <div class="intro" id="block2" style="width: 100%;"
+          data-vide-bg="mp4: video/ocean, webm: video/ocean, ogv: http://vodkabears.github.io/vide/video/ocean, poster: video/ocean"
+          data-vide-options="position: 0% 50%">
+            <h1><strong>Ocean Zou,</strong> a digital designer from Vancouver.<br>
+                Believing in a good design is a good business.
+            </h1>
+            <h4 id="intro-subtitle">
+                <!-- Please feel free to check out <a href="#work">my projects</a> and <a href="#aboutme">profile</a> -->
+                Please feel free to check out <a href="bio-video"> my video introduction</a>
+            </h4>
         </div>
+
 
         <div class="projects" id="work">
             <div class="project1">
@@ -137,6 +151,8 @@
   ================================================== -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/myscript.js"></script>
+
+  <script src="js/jquery.vide.js"></script>
 
 
 </body>

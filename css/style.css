@@ -1,4 +1,5 @@
 
+
 /* -------------------------------- 
 
 EDS bowl - timeline element
@@ -601,7 +602,7 @@ article h4 a:hover {
 
 .palette-block.zeroclipboard-is-active .palette-button::after, .palette-block:active .palette-button::after {
   font-family: "FontAwesome";
-  content: "ÃƒÂ¯Ã¢â€šÂ¬Ã…â€™";
+  content: "ÃƒÆ’Ã‚Â¯ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬â„¢";
   color: #66b6ab;
   background: #ecedf3; }
 
@@ -667,6 +668,7 @@ article h4 a:hover {
   border-top-style: solid;
   border-color: #1F1F1F;
   padding: 50px 0px 50px 0px;
+  z-index: -1222;
 }
 
 nav {
@@ -691,6 +693,7 @@ nav img {
 
 .intro {
   padding: 50px 0px 100px 0px;
+  z-index: 999999;
 }
 
 article h1 {
@@ -741,7 +744,7 @@ article h4 {
   text-rendering: optimizeLegibility;
   font-weight: 400;
   color: #7F7F7F;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 10px 0px 100px 100px;
   line-height: 14pt;
 }
