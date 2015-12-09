@@ -1,14 +1,15 @@
+
+/* -------------------------------- 
+
+EDS bowl - timeline element
+
+-------------------------------- */
 .events-content img{
   width: 30%;
   float: left;
   padding: 40px 60px 70px 100px;
 }
 
-/* -------------------------------- 
-
-Main Components 
-
--------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 0em auto;
@@ -326,7 +327,7 @@ Main Components
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   width: 85%;
-  padding: 0px 0px 70px 100px;
+  padding: 0px 0px 10px 100px;
   font-style: none;
 }
 
@@ -1277,7 +1278,7 @@ footer p {
 .events-content img{
   width: 30%;
   float: left;
-  padding: 0px 0px 20px 50px;
+  padding: 30px 0px 0px 20px;
 }
 
 
@@ -1332,6 +1333,7 @@ nav img {
 
   .cd-horizontal-timeline .events-content h4 {
     padding: 40px 0px 40px 20px;
+    display: inline-block;
   }
 
   .cd-horizontal-timeline .events-content h2 {
