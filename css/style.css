@@ -823,10 +823,10 @@ article h5 {
 
 
 .passion{
-  width: 10%;
+  width: 20%;
   display: inline-block;
   /*float: left;*/
-  padding: 20px 0px 150px 150px;
+  padding: 20px 0px 50px 50px;
   text-align: center; 
 }
 
