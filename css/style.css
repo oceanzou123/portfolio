@@ -2211,3 +2211,28 @@ article h4 a:hover, article h4 a:focus{
   color: #3B579D;
 }
 
+/*
+This component is made to be styled your own way
+Here is an exemple of basic styling to make a grid of your latest images
+*/
+.ImageFeed-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ImageFeed-userName {
+    text-align: center;
+}
+.ImageFeed-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    max-width: 25%;
+}
+.ImageFeed-item a {
+    display: block;
+}
+.ImageFeed-item img {
+    display: block;
+    width: 100%;
+}
